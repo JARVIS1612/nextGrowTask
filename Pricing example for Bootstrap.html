@@ -2,15 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
   <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
   <title>Pricing example for Bootstrap</title>
   <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/pricing/">
-  <link href="./Pricing example for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
-  <link href="./Pricing example for Bootstrap_files/pricing.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
 
 <body>
@@ -25,15 +23,15 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <form name="InputForm" id="InputForm" onsubmit="handleform(event)">
+        <form name="InputForm" id="InputForm" action="https://forms.maakeetoo.com/formapi/921" method="post" onsubmit="handleform()">
           <div class="modal-body">
             <div class="form-group">
               <label for="InputName">Name</label>
-              <input required type="text" name="firstname" class="form-control" id="InputName" placeholder="Your name">
+              <input type="text" name="firstname" class="form-control" id="InputName" placeholder="Your name">
             </div>
             <div class="form-group">
               <label for="InputEmail">Email address</label>
-              <input required type="email" name="email" class="form-control" id="InputEmail"
+              <input type="email" name="email" class="form-control" id="InputEmail"
                 aria-describedby="emailHelp" placeholder="Enter email">
             </div>
             <div class="form-group">
@@ -153,8 +151,6 @@
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
       <div class="row">
         <div class="col-12 col-md">
-          <img class="mb-2" src="./Pricing example for Bootstrap_files/bootstrap-solid.svg" alt="" width="24"
-            height="24">
           <small class="d-block mb-3 text-muted">© 2017-2018</small>
         </div>
         <div class="col-6 col-md">
@@ -195,20 +191,12 @@
   </div>
 
 
-  <script src="./Pricing example for Bootstrap_files/jquery-3.2.1.slim.min.js.download"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-  <script src="./Pricing example for Bootstrap_files/popper.min.js.download"></script>
-  <script src="./Pricing example for Bootstrap_files/bootstrap.min.js.download"></script>
-  <script src="./Pricing example for Bootstrap_files/holder.min.js.download"></script>
-  <script>
-    Holder.addTheme('thumb', {
-      bg: '#55595c',
-      fg: '#eceeef',
-      text: 'Thumbnail'
-    });
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
 
   <!-- Javascript files added by me -->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

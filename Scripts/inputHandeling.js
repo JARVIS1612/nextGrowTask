@@ -6,38 +6,7 @@ function handleform(event) {
     const displayName = document.getElementById("notificationContent");
     const notification = document.getElementById("notification");
 
-    const data = JSON.stringify({
-        name: name,
-        email: email,
-        message: message,
-    });
-
-    fetch("https://forms.maakeetoo.com/formapi/921", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Credentials": "true",
-        },
-        body: data,
-        withCredentials: true,
-    })
-        .then((response) => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            return response.json();
-        })
-        .then((responseData) => {
-            console.log("Response data:", responseData);
-            displayName.innerHTML = `<strong>${name}</strong> We receive your message.`;
-            notification.style.display = "block";
-        })
-        .catch((error) => {
-            console.error("Error:", error);
-            displayName.innerHTML = `<strong>${name}</strong> Something went wrong.`;
-            notification.style.display = "block";
-        });
+    
 }
 
 function handleNumberofusers() {
