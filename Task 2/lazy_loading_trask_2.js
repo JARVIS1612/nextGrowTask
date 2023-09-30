@@ -40,3 +40,4 @@ async function handleScroll() {
     }
 }
 
+document.addEventListener("DOMContentLoaded", handleScroll)
