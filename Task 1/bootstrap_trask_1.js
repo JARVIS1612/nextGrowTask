@@ -1,14 +1,3 @@
-function handleform(event) {
-    event.preventDefault();
-    const name = document.getElementById("InputName").value;
-    const email = document.getElementById("InputEmail").value;
-    const message = document.getElementById("FormControlTextarea").value;
-    const displayName = document.getElementById("notificationContent");
-    const notification = document.getElementById("notification");
-
-    
-}
-
 function handleNumberofusers() {
     const numberOfUsers = Number(document.getElementById("customRange").value);
     const priceCatagory1 = document.getElementById("plancatagory1");
